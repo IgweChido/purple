@@ -1,0 +1,60 @@
+/***************  head components *******************/
+.main-page{
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+.dashboard{
+    height: 1000px;
+    background: #f2edf3;
+}
+
+.phone-nav{
+    display: none;
+}
+
+/* Large devices (laptops/desktops, 991px and down) */
+@media only screen and (max-width: 991px) {
+    .phone-nav{
+        display: block;
+        position: fixed;
+        top:70px;
+        height: 100vh;
+        right: 0;
+    }
+
+    .side-phone{
+        width: 260px;
+        min-width: 260px;
+        background-color: white;
+        height: 100vh;
+        /* border:1px solid green; */
+        animation-name: show;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+        
+    }
+    
+    @keyframes show {
+        from{
+            width: 0px;
+            min-width: 0px;
+        }
+    
+        to{
+           
+            width: 260px;
+            min-width: 260px;
+        }
+    }
+
+   
+}
+
+/* Large devices (laptops/desktops, 991px and down) */
+@media only screen and (max-width: 300px) {
+    .phone-nav{
+        
+        top:140px;
+       
+    }
+}
